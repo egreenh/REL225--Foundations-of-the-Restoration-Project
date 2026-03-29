@@ -1,13 +1,83 @@
 body {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
 }
 
 h1 {
-  color: navy;
+  color: rgb(255, 255, 255);
   font-size: 36px;
 }
 
 p {
-  color: gray;
+  color: rgb(255, 255, 255);
+}
+
+.timeline {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* the vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #ddd8d0;
+}
+
+.entry {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #ddd8d0;
+  position: relative;
+}
+
+/* the dot on the line */
+.entry::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 2.9rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #c8793a;
+}
+
+.year {
+  min-width: 60px;
+  padding-left: 1.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c8793a;
+  flex-shrink: 0;
+}
+
+.content h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.content p {
+  font-size: 0.95rem;
+  color: #6b6560;
+  line-height: 1.75;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b8b2aa;
+  border: 1px solid #ddd8d0;
+  padding: 0.2em 0.6em;
 }
