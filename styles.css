@@ -59,6 +59,11 @@ p {
   flex-shrink: 0;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .content h2 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
