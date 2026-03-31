@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 2rem 0 0.5rem;
 }
 
@@ -69,6 +69,7 @@ p {
 a {
   color: #b8b2aa;
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -245,4 +246,12 @@ blockquote cite {
 
 .sources-list a:hover {
   color: #c8793a;
+}
+
+.sources-header {
+  color: #c8793a;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin :0.5rem 0 2rem;
 }
