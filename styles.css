@@ -1,24 +1,105 @@
+/* ── Base ── */
 body {
   background-color: rgb(0, 0, 0);
-  font-family: Arial, sans-serif;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.1rem;
+  padding-top: 2rem;
 }
 
+/* ── Layout container ── */
+main, body > p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Nav ── */
+nav {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #222;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+nav a {
+  color: #b8b2aa;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #c8793a;
+}
+
+/* ── Typography ── */
 h1 {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 36px;
+  padding: 0 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 2rem 0 0.5rem;
 }
 
 p {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
+a {
+  color: #b8b2aa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c8793a;
+}
+
+/* ── Blockquote ── */
+blockquote {
+  border-left: 3px solid #c8793a;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 1.75;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* ── Timeline ── */
 .timeline {
   max-width: 640px;
   margin: 0 auto;
   position: relative;
 }
 
-/* the vertical line */
 .timeline::before {
   content: '';
   position: absolute;
@@ -37,7 +118,6 @@ p {
   position: relative;
 }
 
-/* the dot on the line */
 .entry::before {
   content: '';
   position: absolute;
@@ -85,4 +165,76 @@ p {
   color: #b8b2aa;
   border: 1px solid #ddd8d0;
   padding: 0.2em 0.6em;
+}
+
+/* ── Bible Table ── */
+.bible-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.bible-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #c8793a;
+  color: #c8793a;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.bible-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd8d0;
+  color: #b8b2aa;
+  vertical-align: top;
+  line-height: 1.65;
+}
+
+.bible-table td:first-child {
+  white-space: nowrap;
+  color: #c8793a;
+}
+
+.bible-table td:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bible-table tr:hover td {
+  background-color: #111;
+}
+
+.bible-table a {
+  color: #c8793a;
+  text-decoration: none;
+}
+
+.bible-table a:hover {
+  text-decoration: underline;
+}
+
+/* ── Sources ── */
+.sources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 2rem;
+}
+
+.sources-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.sources-list a {
+  color: #b8b2aa;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.sources-list a:hover {
+  color: #c8793a;
 }
