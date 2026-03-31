@@ -217,6 +217,14 @@ blockquote cite {
   text-decoration: underline;
 }
 
+.table-credit {
+  font-size: 0.8rem;
+  color: #6b6560;
+  font-style: italic;
+  margin-top: -1rem;
+  padding: 0 0.25rem;
+}
+
 /* ── Sources ── */
 .sources-list {
   list-style: none;
